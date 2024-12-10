@@ -1,10 +1,22 @@
-#lambda funtion ko hum tub use krty hain jub hum code ko single line main likhty hain
-single = lambda x:x*2
-print(single(5))
+class Person:
+  name = "ALI"
+  occupation = "Software Developer"
+  networth = 10
+  def info(self):
+    print(f"{self.name} is a {self.occupation}")
 
-B = lambda x,y: x+y
-print(B(4,3))
 
-C = lambda a,b,c:(a+b+c)/3
-print(C(4,44,3))
+a = Person()
+b = Person()
+c = Person()
 
+a.name = "maqsooda"
+a.occupation = "principle of unique"
+
+b.name = "kashan"
+b.occupation = "a friend"
+
+# print(a.name, a.occupation)
+a.info()
+b.info()
+c.info()
